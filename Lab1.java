@@ -3,11 +3,13 @@ public class Lab1 {
 
     public static void main(String[]args){
         int i;
-        int n [] = new int[3];
+        int n;
         Scanner scnr = new Scanner(System.in);
+        n = scnr.nextInt();
+        int N[] = new int[n];
         for (i = 0; i < 3 ; i++){
-            n[i] = scnr.nextInt();
-            
+            N[i]=i+1;
+            System.out.println(N[i]);
         }
             
         }
