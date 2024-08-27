@@ -8,7 +8,7 @@ public class Lab1 {
         Scanner scnr = new Scanner(System.in);
         n = scnr.nextInt();
         int N[] = new int[n];
-        for (i = 0; i < 3 ; i++){
+        for (i = 0; i < n ; i++){
             N[i]=i+1;
         }
         System.out.println(Arrays.toString(N));
