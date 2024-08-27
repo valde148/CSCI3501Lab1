@@ -65,3 +65,10 @@ public class Lab1 {
         array[j] = temp;
     }
 }
+
+// What is the number of lines of output as a function of n? Explain how you computed it.
+// The number of lines of output is n!. This is because for each element in the array, we are swapping it with every other element in the array.
+
+// Based on your timing results and on approximation of the number of lines printed please estimate how long your program would run for n = 15 and for n = 20. Show how you have computed the estimate.
+// For n=8 it was 10534 milliseconds 8! = 40320 so the constant in front of n! would be 10534/40320 = 0.2615 so for n=15 the time would
+// be around 0.26*15! = 3.39*10^11 milliseconds which is 3.39*10^8 seconds, or ~27777 hours. n=20 would be .26 * 20! = 6.33*10^17 milliseconds or 6.33*10^14 seconds or 1.75*10^12 hours which is 200,585,595 years.
