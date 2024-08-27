@@ -11,9 +11,11 @@ public class Lab1 {
         for (i = 0; i < n ; i++){
             N[i]=i+1;
         }
-        print(N);
+
+        permute(N,0);
     }
 
+    // helper function to print an array
     private static void print (int[] array) {
         StringBuilder sb = new StringBuilder();
         for (int i=0; i<array.length; i++) {
@@ -23,5 +25,34 @@ public class Lab1 {
             }
         }
         System.out.println(sb.toString());
+    }
+
+    private static void permute(int[] array, int currindex) {
+        int l = array.length;
+
+        // base case
+        // if we are at the last index, print the array
+        if (currindex == l) {
+            print(array);
+            return;
+        }
+
+        // recursive case
+        /*  Swap the element at currindex with the element at index i, 
+            then permute the rest of the array in order to get the permutation
+             of the subarray starting at index currindex + 1 */
+         
+        for (int i = currindex; i < l; i++) {
+            swap (array, currindex, i); 
+            permute(array, currindex + 1);
+            swap (array, currindex, i);
+        }
+    }
+
+    // helper function to swap two elements in an array
+    private static void swap(int[] array, int i, int j){
+        int temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
     }
 }
