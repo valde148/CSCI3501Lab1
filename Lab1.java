@@ -12,12 +12,16 @@ public class Lab1 {
         int n;
         Scanner scnr = new Scanner(System.in);
         n = scnr.nextInt();
+        long startTime = System.currentTimeMillis();
         int N[] = new int[n];
         for (i = 0; i < n ; i++){
             N[i]=i+1;
         }
 
         permute(N,0);
+        long endTime = System.currentTimeMillis();
+        long totalTime = endTime - startTime;
+        System.out.println("Total time: " + totalTime + " milliseconds");
     }
 
     // helper function to print an array
