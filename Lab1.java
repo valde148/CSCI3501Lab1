@@ -1,5 +1,10 @@
 import java.util.Arrays;
 import java.util.Scanner;
+/*
+ * Lab 1: Permutations
+ * Tristan Kalvoda & Armando Valdez
+ */
+
 public class Lab1 {
 
     public static void main(String[]args){
