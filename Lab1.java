@@ -11,8 +11,17 @@ public class Lab1 {
         for (i = 0; i < n ; i++){
             N[i]=i+1;
         }
-        System.out.println(Arrays.toString(N));
-            
-        }
+        print(N);
     }
-    
+
+    private static void print (int[] array) {
+        StringBuilder sb = new StringBuilder();
+        for (int i=0; i<array.length; i++) {
+            sb.append(array[i]);
+            if (i != array.length - 1) {
+                sb.append(" ");
+            }
+        }
+        System.out.println(sb.toString());
+    }
+}
