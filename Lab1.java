@@ -78,4 +78,4 @@ public class Lab1 {
 //We also test with a graph and tried n = 9 to see if it is still growing in a steady pase and for n = 9 we got 42619 milliseconds
 // so 42619/ 9! we get 0.117447 on the graph and see it is steady. 
 // This is on Armando Laptop we get for n = 15 we used .11*(15)!/1000/360 = 399,567 hours or 45.61 year
-//Then n = 20 it is .11(20)!/1000*360*24*365 = 84861.25 years
+//Then n = 20 it is .11(20)!/1000*360*24*365 = 84861498.25 years
